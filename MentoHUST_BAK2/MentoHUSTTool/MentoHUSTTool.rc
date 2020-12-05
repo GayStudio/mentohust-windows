@@ -1,0 +1,263 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MentoHUSTTool.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MentoHUSTTool.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 210, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MentoHUST 工具"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,8,20,20
+    LTEXT           "MentoHUST工具 0.2 版",IDC_STATIC,37,9,81,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2009 HustMoon@BYHH",IDC_STATIC,37,22,125,8
+    LTEXT           "声明：本程序用于生成支持锐捷V3算法的MentoHUST的数据文件。\nMentoHUST及本程序的编写只是为了方便使用锐捷认证的同学在非Windows平台上或锐捷出了问题时能有个兼容客户端暂解燃眉之急。\n不得将本程序用于任何非法用途及其他有违相关方利益的用途，否则一切后果自负。如果您使用本程序及MentoHUST，就表示您完全同意本声明。",
+                    IDC_STATIC,10,35,190,66,SS_SUNKEN
+    DEFPUSHBUTTON   "确定",IDOK,79,105,50,14,WS_GROUP
+    LTEXT           "联系作者",IDC_SC_CONTACT,167,9,33,8,SS_NOTIFY | 
+                    WS_TABSTOP
+    LTEXT           "检查更新",IDC_SC_UPDATE,167,22,33,8,WS_TABSTOP
+END
+
+IDD_MENTOHUSTTOOL_DIALOG DIALOGEX 0, 0, 210, 123
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MentoHUST 工具"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         129,IDC_SC_LOGO,"Static",SS_BITMAP,5,2,200,35
+    GROUPBOX        "欢迎使用本改包工具",IDC_STATIC,5,38,200,80
+    LTEXT           "网　卡:",IDC_STATIC,14,51,29,8
+    COMBOBOX        IDC_CB_ADAPTER,43,49,153,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "抓包未开始",IDC_SC_STATE,14,82,183,13,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    DEFPUSHBUTTON   "开始",IDC_BN_START,58,98,28,15
+    DEFPUSHBUTTON   "关于",IDC_BN_ABOUT,95,98,28,15
+    PUSHBUTTON      "帮助",IDC_BN_HELP,133,98,28,15
+    PUSHBUTTON      "退出",IDCANCEL,169,98,28,15
+    CONTROL         "集成8021x.exe",IDC_CK_8021X,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,14,67,76,10
+    CONTROL         "集成W32N55.dll",IDC_CK_W32N55,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,105,67,72,10
+    LTEXT           "MentoHUST",IDC_STATIC,15,102,37,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,2,0,0
+ PRODUCTVERSION 0,2,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "华梦工作室\0"
+            VALUE "FileDescription", "MentoHUST数据文件生成工具\0"
+            VALUE "FileVersion", "0, 2, 0, 0\0"
+            VALUE "InternalName", "MentoHUSTTool\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2009\0"
+            VALUE "OriginalFilename", "MentoHUSTTool.EXE\0"
+            VALUE "ProductName", "MentoHUST数据文件生成工具\0"
+            VALUE "ProductVersion", "0, 2, 0, 0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 205
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_MENTOHUSTTOOL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 205
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 118
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  DISCARDABLE     "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "res\\exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MentoHUSTTool(&A)..."
+    IDS_MSG_CAPTION         "温馨提示"
+    IDS_FILE_FILTER         "MentoHUST 数据文件(*.mpf)|*.mpf|所有文件(*.*)|*.*||"
+    IDS_HELP_FILE           "Readme.txt"
+    IDS_HELP_ERROR          "在程序所在目录找不到帮助文件 Readme.txt！"
+    IDS_LOGO_URL            "http://lewuya.ys168.com/"
+    IDS_LOGO_TIP            "欢迎访问更新主页！"
+    IDS_START_CATCH         "开始"
+    IDS_CANCEL_CATCH        "取消"
+    IDS_NOADAPTER           "找不到网卡！"
+    IDS_OPEN_ERROR          "打开网卡失败: %s"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_FILTER_ERROR        "设置pcap过滤器失败: %s"
+    IDS_FILE_ERROR          "请指定相应版本的原始数据包文件后再开始！"
+    IDS_RUN_RUIJIE          "抓包已开始，请运行锐捷客户端开始正常认证过程。"
+    IDS_CATCH_ERROR         "抓包失败，请检查网络连接!"
+    IDS_STATE_START         "正在抓取Start包……"
+    IDS_STATE_MD5           "正在抓取MD5包……"
+    IDS_STATE_STOPPING      "正在停止抓包，请稍等……"
+    IDS_STATE_STOP          "抓包已停止"
+    IDS_SAVE_ERROR          "保存数据失败！"
+    IDS_SAVE_SUCCESS        "相关数据已成功捕获并保存！\n如果集成了8021x.exe，可以不再需要8021x.exe。\n如果集成了W32N55.dll，可以不再需要W32N55.dll。\n如果认证失败，请把SuConfig.dat放到数据文件所在目录。"
+    IDS_CONTACT             "欢迎联系与交流！"
+    IDS_UPDATE              "程序不好用、有Bug，换新版本试试！"
+    IDS_CONTACT_INFO        "HustMoon@BYHH\n联系QQ: 858387065\n邮箱: mentohust@ehust.co.cc\n项目主页: http://mentohust.googlecode.com/"
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\MentoHUSTTool.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

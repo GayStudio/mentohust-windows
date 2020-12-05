@@ -1,0 +1,322 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\MentoHUST.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MentoHUST.ico"
+IDI_CERTTING            ICON    DISCARDABLE     "res\\Certting.ico"
+IDI_FAILED              ICON    DISCARDABLE     "res\\Failed.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 210, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 MentoHUST"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,4,20,20
+    LTEXT           "MentoHUST 2009Beta版",IDC_STATIC,45,5,112,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) HustMoon 2009",IDC_STATIC,45,17,109,8
+    LTEXT           "致谢:本程序在编写上参考了由Athlonxeon(Snowwings)、xww、ridge、JimmyKing、HCNE@BYHH等创作的Mento Supplicant 3.8版，以及freevanx所写Mento Ext的DHCP认证过程，使用了Soar的客户端版本校验算法，在此向他们表示感谢！\n作者:华梦工作室(HustMoon Studio)\n联系QQ:858387065\nMentoHUST感言:人到华中大，有甜亦有辣。\n\t\t\t明德厚学地，求是创新家。",
+                    IDC_STATIC,7,30,196,75,WS_BORDER
+    DEFPUSHBUTTON   "确定",IDOK,87,108,34,14,WS_GROUP
+END
+
+IDD_MENTOHUST_DIALOG DIALOGEX 0, 0, 210, 230
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "MentoHUST 2009Beta版"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         131,IDC_STATIC,"Static",SS_BITMAP,5,2,200,50
+    GROUPBOX        "认证选项",IDC_STATIC,5,38,200,80
+    LTEXT           "用户名:",IDC_STATIC,17,47,29,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_NAME,49,47,143,12,ES_AUTOHSCROLL
+    LTEXT           "密码:",IDC_STATIC,17,61,29,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_PASS,49,61,143,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "网卡:",IDC_STATIC,17,75,29,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_NICLIST,49,75,143,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "MentoHUST",IDC_STATE,17,90,175,11,WS_BORDER
+    DEFPUSHBUTTON   "认证",IDC_BN_CONNECT,17,102,34,14
+    PUSHBUTTON      "输出↓",IDC_BN_OUTPUT,64,102,34,14
+    PUSHBUTTON      "设置",IDC_BN_OPTION,111,102,34,14
+    PUSHBUTTON      "退出",IDC_BN_EXIT,158,102,34,14
+    LISTBOX         IDC_MSGLIST,8,127,194,90,NOT LBS_NOTIFY | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "关于",IDC_BN_ABOUT,37,213,34,14
+    PUSHBUTTON      "帮助",IDC_BN_HELP,88,213,34,14
+    PUSHBUTTON      "清空",IDC_BN_CLEAR,138,213,34,14
+END
+
+IDD_USERCFG DIALOG DISCARDABLE  0, 0, 196, 88
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "使用标准组播地址发送认证请求",IDC_NORMAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,4,60,128,10
+    CONTROL         "使用锐捷私有组播地址发送认证请求",IDC_RUIJIE,"Button",
+                    BS_AUTORADIOBUTTON,4,73,144,10
+    CONTROL         "开机后自动运行",IDC_AUTORUN,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,4,4,72,10
+    CONTROL         "运行后自动认证",IDC_AUTOCERT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,4,72,10
+    CONTROL         "认证成功最小化",IDC_AUTOMIN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,17,72,10
+    CONTROL         "保存用户密码",IDC_SAVEPASS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,93,17,64,10
+    LTEXT           "DHCP 方式:",IDC_STATIC,4,32,41,8
+    COMBOBOX        IDC_DHCP,49,30,40,30,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "绑定网关ARP(限XP系统)",IDC_ARP_BIND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,93,31,100,10
+    LTEXT           "认证超时(秒):",IDC_STATIC,4,47,53,8
+    EDITTEXT        IDC_EDIT_TIMEOUT,57,45,32,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "响应间隔(秒):",IDC_STATIC,93,47,53,8
+    EDITTEXT        IDC_EDIT_ECHO,147,45,32,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_EXTRACFG DIALOG DISCARDABLE  0, 0, 196, 88
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "个性标题:",IDC_MYCAPTION,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,6,50,10
+    EDITTEXT        IDC_EDIT_CAPTION,55,5,135,12,ES_AUTOHSCROLL
+    CONTROL         "自定义认证数据包:",IDC_MYPACKAGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,4,22,84,10
+    PUSHBUTTON      "浏览",IDC_BN_SCAN,119,20,33,14
+    PUSHBUTTON      "捕获",IDC_BN_CATCH,157,20,33,14
+    CONTROL         "伪造 MAC:",IDC_MYMAC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,55,50,10
+    EDITTEXT        IDC_EDIT_MAC,55,54,73,12,ES_AUTOHSCROLL
+    CONTROL         "伪造 IP:",IDC_MYIP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,71,48,10
+    CONTROL         "IPAddress2",IDC_IP,"SysIPAddress32",WS_TABSTOP,55,70,73,
+                    12
+    EDITTEXT        IDC_EDIT_PATH,15,36,175,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "要校验客户端的同学请开启自定义数据包功能。",IDC_STATIC,
+                    133,55,57,25
+END
+
+IDD_CFG DIALOGEX 0, 0, 210, 125
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数设置"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_TAB,"SysTabControl32",0x0,7,5,196,100
+    DEFPUSHBUTTON   "确定",IDOK,37,108,34,14
+    PUSHBUTTON      "取消",IDCANCEL,88,108,34,14
+    DEFPUSHBUTTON   "应用",IDC_SAVE,138,108,34,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 2,3,0,0
+ PRODUCTVERSION 2,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "CompanyName", "华梦工作室\0"
+            VALUE "FileDescription", "理想的校园网认证程序\0"
+            VALUE "FileVersion", "2009Beta版\0"
+            VALUE "LegalCopyright", "版权所有 (C) MentoHUST\0"
+            VALUE "LegalTrademarks", "菜鸟哪来这个啊！\0"
+            VALUE "OriginalFilename", "MentoHUST.exe\0"
+            VALUE "ProductName", "MentoHUST\0"
+            VALUE "ProductVersion", "2.3.0.0\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_MENTOHUST_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 205
+        TOPMARGIN, 7
+    END
+
+    IDD_USERCFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_EXTRACFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+    END
+
+    IDD_CFG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 203
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_LOGO                BITMAP  MOVEABLE PURE   "res\\logo.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+IDR_MANIFEST            24      DISCARDABLE     "res\\MentoHUST.exe.manifest"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 MentoHUST(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\MentoHUST.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
